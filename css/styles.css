@@ -4,15 +4,11 @@
 
 .container{
 	margin: 10px;
-}
-/*
-.container:after{
 	clear: both;
-	content: "";
-}*/
+}
 
 .left-block {
-	display: block;
+	display: none;
 	position: relative;
 	background: #FFFFFF;
 	float: left;
@@ -23,19 +19,24 @@
 
 .main-block {
 	float:right;
-	width: 60%;
+	width: 100%;
 	border: 1px solid #000;
 	position: relative;
 }
 
-.close-left {
-	background: #FFFFFF;
-	padding: 8px;
-	border-radius: 5px;
-	border: 1px solid #000;
+#close-left {
+  	display: block;
+  	background: #FFFFFF;
+  	padding: 7px;
+  	border-radius: 3px;
+  	border: 1px solid #000;
+  	position: absolute;
+  	right: 5px;
+  	top: 47px;
 }
 
-.content-form div:nth-of-type(1) input, .content-form div:nth-of-type(2) input {
+.content-form div:nth-of-type(1) input, 
+.content-form div:nth-of-type(2) input {
 	float:left;
 	margin-left: 15px;
 }
@@ -45,7 +46,8 @@
 	width: 100px;
 }
 
-.content-form div:nth-of-type(1) label, .content-form div:nth-of-type(2) label {
+.content-form div:nth-of-type(1) label, 
+.content-form div:nth-of-type(2) label {
 	float: left;
 	width: 40px;
 	padding-bottom: 20px;
@@ -61,6 +63,7 @@
 
 .content-form h3 {
 	padding: 20px 0;
+  	font-size: 22px;
 }
 
 .content-form div:nth-of-type(3) label {
@@ -78,55 +81,50 @@
 }	
 
 .addbtn {
-
 	padding: 5px 40px;
 	margin-top: 10px;
 	float: right;
-	border-radius: 5px;
+	border-radius: 3px;
 	box-shadow: none !important;
 	border: 1px solid #000;
 	background: #FFFFFF;
 }
 
-.addbtn:hover {
-	background: #2E89C9;
+.addbtn:hover, #close-left:hover, #mainbtn:hover {
+	background: #626060;
 	color: white;
 }
 
-
-.close-left {
-	position: absolute;
-	right: 0;
-	top: 30px;
-}
-
-.close-left:hover {
-	background: #2E89C9;
-	color: white;
+#close-left:hover {
 	text-decoration: none;
 }
 
-#tbs ul {
+.tbs ul {
 	padding: 0;
 	margin: 0;
 }
 
-div#tbs li {
+.tbs ul li {
 	display: inline-block;
-	background: #2E89C9;
-	padding: 10px;
-	border-top-left-radius: 40px;
-	border-top-right-radius: 40px;
-
+ 	border: 1px solid;
+ 	border-bottom: none;
 }
 
-div#tbs li a {
+.tbs ul li:hover {
+	background: #626060; 
+}
+
+.tbs li a {
+	display: block;
+  	padding: 8px 10px;
+  	text-decoration: none;
+}
+.tbs li a:hover {
 	color: white;
-	
 }
 
-div#tbs {
-	margin: 45px 25px;
+.tbs {
+	margin: 22px 25px;
 }
 
 #tab-content {
@@ -135,11 +133,10 @@ div#tbs {
 
 
 #mainbtn {
-	position: absolute;
-	top: 10px;
-	left:25px;
-	display: inline-block;
-	padding: 5px;
-	text-decoration: none;
-	border: 1px solid #000;
+  	display: inline-block;
+  	padding: 6px 52px;
+  	text-decoration: none;
+  	border: 1px solid #000;
+  	border-radius: 2px;
+  	margin: 15px 0 0 24px;
 }
