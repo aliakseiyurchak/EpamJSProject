@@ -1,0 +1,18 @@
+
+    [
+    {
+        "title": "Home",
+        "content": "<h1>Title</h1>"
+    },
+    {
+        "title": "Dashboard",
+        "content": "<h1>Title</h1>"
+    },
+    {
+        "title": "About",
+        "content": "<h1>Title</h1>"
+    },
+    {
+        "title": "Contact",
+        "content": "<h1>Title</h1><a href = 'http://www.javascript.ru'>Out</a>"
+    }]

@@ -108,6 +108,7 @@
 	display: inline-block;
  	border: 1px solid;
  	border-bottom: none;
+ 	margin-right: 5px;
 }
 
 .tbs ul li:hover {
@@ -131,6 +132,18 @@
 	border: 1px solid #000;
 }
 
+#tab-content div {
+	margin: 30px;
+  	border: 1px solid;
+}
+
+#tab-content div:nth-of-type(2){
+	display: none;
+}
+
+#tab-content p {
+	text-align: justify;
+}
 
 #mainbtn {
   	display: inline-block;
