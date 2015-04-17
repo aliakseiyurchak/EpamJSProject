@@ -1,18 +1,22 @@
-
-    [
+[
     {
+        "index": "1",
         "title": "Home",
-        "content": "<h1>Title</h1>"
+        "content": "<h1>erter</h1>"
     },
     {
+        "index": "2",
         "title": "Dashboard",
-        "content": "<h1>Title</h1>"
+        "content": "<h1>AnothertitleS</h1>"
     },
     {
+        "index": "3",
         "title": "About",
-        "content": "<h1>Title</h1>"
+        "content": "<h1>rtetert</h1>"
     },
     {
+        "index": "4",
         "title": "Contact",
         "content": "<h1>Title</h1><a href = 'http://www.javascript.ru'>Out</a>"
-    }]
+    }
+]
